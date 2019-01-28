@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="8999ff8a-156f-4a22-9a0f-215b7db87f8f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://api.terminology.microsoft.com/Terminology.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Terminology.disco" MetadataType="Disco" ID="8ac22e31-b469-4853-8ff1-f3950dfae92f" SourceId="1" SourceUrl="http://api.terminology.microsoft.com/Terminology.svc?disco" />
+    <MetadataFile FileName="Terminology.wsdl" MetadataType="Wsdl" ID="5ec6c45e-beec-44dd-b2bc-06e6d0309fa2" SourceId="1" SourceUrl="http://api.terminology.microsoft.com/Terminology.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="Terminology1.wsdl" MetadataType="Wsdl" ID="b8506f53-4a2a-4a1c-8617-009c8fe0fc01" SourceId="1" SourceUrl="http://api.terminology.microsoft.com/Terminology.svc?wsdl" />
+    <MetadataFile FileName="Terminology.xsd" MetadataType="Schema" ID="a1b6392d-8601-48d4-91e1-7f0e41c2c9c1" SourceId="1" SourceUrl="http://api.terminology.microsoft.com/Terminology.svc?xsd=xsd1" />
+    <MetadataFile FileName="Terminology1.xsd" MetadataType="Schema" ID="7bec2b33-cc77-42a3-90ca-d6fc3f8a530a" SourceId="1" SourceUrl="http://api.terminology.microsoft.com/Terminology.svc?xsd=xsd0" />
+    <MetadataFile FileName="Terminology2.xsd" MetadataType="Schema" ID="b0031821-07eb-4f44-bdbe-563e4501a444" SourceId="1" SourceUrl="http://api.terminology.microsoft.com/Terminology.svc?xsd=xsd3" />
+    <MetadataFile FileName="Terminology3.xsd" MetadataType="Schema" ID="9b92f445-6e09-44d7-afe8-f250c3c473ef" SourceId="1" SourceUrl="http://api.terminology.microsoft.com/Terminology.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
