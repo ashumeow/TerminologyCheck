@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Windows.Forms;
 using LanguageTerminologyCheck.TerminologyService;
 
@@ -19,12 +19,18 @@ namespace LanguageTerminologyCheck
             };
             // Create the proxy for the Terminology Service SOAP client
             TerminologyClient service = new TerminologyService.TerminologyClient();
-            // Call GetTranslations to get the results
-            Matches results = service.GetTranslations("hello, how are you?", "en-US", "es-ES", SearchOperator.Contains, translationSources, false, 20, true, null);
-            // Use the results
-            foreach (Match match in results)
+            try
             {
-                MessageBox.Show(match.OriginalText + "----" + match.Translations[0].TranslatedText);
+                // Call GetTranslations to get the results
+                Matches results = service.GetTranslations("hello", "en-US", "es-ES", SearchStringComparison.CaseInsensitive, SearchOperator.Contains, translationSources, false, 20, true, null);
+                // Use the results
+                foreach (Match match in results)
+                {
+                    MessageBox.Show(match.OriginalText + "----" + match.Translations[0].TranslatedText);
+                }
+            } catch (Exception ex)
+            {
+                // do nothing
             }
         }
     }
